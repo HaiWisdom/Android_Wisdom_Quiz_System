@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_quiz1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.uwaterloo.quiz_system.AddQuiz1Activity"
+    tools:showIn="@layout/activity_add_quiz1"
+    android:orientation="vertical"
+    android:background="@color/A100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="@string/addQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addQ"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_middle"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:text="@string/addQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addQuestion"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/spacing"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editQuestion"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/addQuestions"
+            android:background="@drawable/edit_text_style"/>
+
+        <TextView
+            android:text="@string/addA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addA"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/spacing"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editOptionA"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/addA"
+            android:background="@drawable/edit_text_style"/>
+
+        <TextView
+            android:text="@string/addB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addOptionB"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/spacing"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editOptionB"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/addB"
+            android:background="@drawable/edit_text_style"/>
+
+        <TextView
+            android:text="@string/addC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addOptionC"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/spacing"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editOptionC"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/addC"
+            android:background="@drawable/edit_text_style"/>
+
+        <TextView
+            android:text="@string/addD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addOptionD"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/spacing"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editOptionD"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/addD"
+            android:background="@drawable/edit_text_style"/>
+
+        <TextView
+            android:text="@string/rightAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rightAnswer"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/spacing"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editRightAnswer"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:background="@drawable/edit_text_style"/>
+
+        <Button
+            android:text="@string/submitNewQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSubmitNewQuiz"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/button_space"
+            android:layout_marginRight="@dimen/button_space"
+            android:background="@color/A200" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="correct_answer">#00CC00</color>
+    <color name="incorrect_answer">#FF0000</color>
+    <color name="lime_900">#827717</color>
+    <color name="lime_700">#AFB42B</color>
+    <color name="lime_500">#CDDC39</color>
+    <color name="lime_300">#DCE775</color>
+    <color name="lime_100">#F0F4C3</color>
+    <color name="A100">#F4FF81</color>
+    <color name="A200">#EEFF41</color>
+    <color name="A400">#C6FF00</color>
+    <color name="A700">#AEEA00</color>
+    <color name="dark_gray">#8a020304</color>
+</resources>

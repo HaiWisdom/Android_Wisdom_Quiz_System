@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_manage_quiz_taker1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.uwaterloo.quiz_system.ManageQuizTaker1Activity"
+    tools:showIn="@layout/activity_manage_quiz_taker1"
+    android:orientation="vertical"
+    android:background="@color/A100">
+
+    <TextView
+        android:text="@string/setUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeQuizMaster"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_middle"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userIdLinearLayout"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_weight="1"
+            android:text="@string/UerID"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/qtUserId"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/idHint"
+            android:background="@drawable/edit_text_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userIdLinearLayout1"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:text="@string/password"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/qtUserPassword"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="@string/passwordHint"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/setTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setTimer"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userIdLinearLayout2"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarTime"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_marginTop="20dp"
+            android:progressDrawable="@drawable/progress"
+            android:thumb="@drawable/thumb"
+            android:layout_weight="0.12" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/displayTime"
+        android:layout_weight="1"
+        android:text="@string/minTime"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/warning_manageTaker"
+        android:textColor="@color/incorrect_answer"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/warning_size"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <Button
+        android:text="@string/saveAndBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveManageUser"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/button_space"
+        android:layout_marginRight="@dimen/button_space"
+        android:background="@color/A200" />
+
+
+
+</LinearLayout>

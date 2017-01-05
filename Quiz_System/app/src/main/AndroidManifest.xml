@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.uwaterloo.quiz_system">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Welcome1Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QuizTaker1Activity"
+            android:label="@string/title_activity_quiz_taker"
+            android:parentActivityName=".Welcome1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.uwaterloo.quiz_system.Welcome1Activity" />
+        </activity>
+        <activity
+            android:name=".QuizMaster1Activity"
+            android:label="@string/title_activity_quiz_master"
+            android:parentActivityName=".Welcome1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.uwaterloo.quiz_system.Welcome1Activity" />
+        </activity>
+        <activity
+            android:name=".ManageQuizTaker1Activity"
+            android:label="@string/title_activity_manage_quiz_taker"
+            android:parentActivityName=".QuizMaster1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.uwaterloo.quiz_system.QuizMaster1Activity" />
+        </activity>
+        <activity
+            android:name=".AddQuiz1Activity"
+            android:label="@string/title_activity_add_quiz"
+            android:parentActivityName=".QuizMaster1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.uwaterloo.quiz_system.QuizMaster1Activity" />
+        </activity>
+        <activity
+            android:name=".DoQuiz1Activity"
+            android:label="@string/title_activity_do_quiz1"
+            android:parentActivityName=".QuizTaker1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.uwaterloo.quiz_system.QuizTaker1Activity" />
+        </activity>
+        <activity
+            android:name=".Performance1Activity"
+            android:label="@string/title_activity_performance1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

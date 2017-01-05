@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_quiz_master1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.uwaterloo.quiz_system.QuizMaster1Activity"
+    tools:showIn="@layout/activity_quiz_master1"
+    android:orientation="vertical"
+    android:background="@color/A100">
+
+    <TextView
+        android:text="@string/welcomeQM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeQuizMaster"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:text="@string/mtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonManageQT"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/button_space"
+        android:layout_marginRight="@dimen/button_space"
+        android:background="@color/lime_500" />
+
+    <Button
+        android:text="@string/mq1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonManageQuiz"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/button_space"
+        android:layout_marginRight="@dimen/button_space"
+        android:background="@color/lime_500" />
+
+
+</LinearLayout>
